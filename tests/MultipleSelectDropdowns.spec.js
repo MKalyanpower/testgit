@@ -26,7 +26,7 @@ test('MultipleDropdown',async({page})=>{
 // await expect(options.length).toBe(7);
  
 const content =await page.locator('#colors').textContent();
-   await expect(content.includes('Black')).toBeTruthy();//try negative data and check
+   await expect(content.includes('Black ')).toBeTruthy();//try negative data and check
    
 
 })
