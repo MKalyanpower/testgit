@@ -26,8 +26,9 @@ test('Dropdown1',async({page})=>{
            let value= await option.textContent();
            
            if(value.includes(name)){
-            await page.locator(`xpath://option[@value="france"]`).click();
-        //    await page.selectOption('#country',name);
+            // await page.locator(`//option[@value="france"]`).click();
+            
+           await page.selectOption('#country',name);
             }
 
                }

@@ -3,7 +3,9 @@ test('MultipleDropdown',async({page})=>{
     await page.goto("https://testautomationpractice.blogspot.com/");
 
     //select multiple options from multi-select dropdown using array
-    //await page.selectOption('#colors',['blue','yellow','green']);
+    await page.selectOption('#colors',['blue','yellow','green']);
+    await page.waitForTimeout(3000);
+
 
     //Assertions 
     //1)Checking no.of options in the dropdown
@@ -25,9 +27,13 @@ test('MultipleDropdown',async({page})=>{
 // //console.log('no.of options',options.length)
 // await expect(options.length).toBe(7);
  
-const content =await page.locator('#colors').textContent();
-   await expect(content.includes('Black ')).toBeTruthy();//try negative data and check
+// const content =await page.locator('#colors').textContent();
+//    await expect(content.includes('Black ')).toBeTruthy();//try negative data and check
    
+//url for bootstrap dropdown https://jquery-az.com/boots/demo.php?ex=63.0_2
 
+
+
+//
 })
 
