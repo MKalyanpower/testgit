@@ -73,7 +73,7 @@ for(let p=0;p<await pages.count();p++){
 
  
  })
- //it is for above 3 approach
+ //it is for above 3rd approach
 //  async function Selection(rows,page,name){
 //    const value =rows.filter({
 //       has:page.locator('td'),
