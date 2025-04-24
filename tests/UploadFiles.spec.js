@@ -28,5 +28,6 @@ test.only('Multiplefile',async({page})=>{
  //removing files
  await page.locator('#file-upload').setInputFiles([]);//keep empty ,files automatically detached
  //to delete files
+
 expect(await page.locator('#fileList li:nth-child(1)')).toHaveText('No Files Selected');
 })

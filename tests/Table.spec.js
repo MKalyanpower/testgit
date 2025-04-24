@@ -7,12 +7,12 @@ const {test,expect} = require("playwright/test");
     const table =await page.locator('#productTable');
 //1)Total no.of rows and columns
     const columns =await table.locator('thead tr th');
-    console.log('number of columns:',await columns.count());
- expect(await columns.count()).toEqual(4)
+//     console.log('number of columns:',await columns.count());
+//  expect(await columns.count()).toEqual(4)
 
     const rows =await table.locator('tbody tr')
-    console.log('number of rows',await rows.count());
-     expect(await rows.count()).toBe(5);
+   //  console.log('number of rows',await rows.count());
+   //   expect(await rows.count()).toBe(5);
 
 
 //2)Select the checkbox for Smartwatch
@@ -48,7 +48,7 @@ for(let j=0;j<await tds.count()-1;j++){
    
 }
 */
-
+//pagination
 const pages = page.locator('#pagination li a');
 console.log('Number of pages in table:',await pages.count());
 

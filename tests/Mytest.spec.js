@@ -9,4 +9,6 @@ test('test', async ({ page }) => {
 
   await page.locator('#loginpassword').fill('test@123');
   await page.getByRole('button', { name: 'Log in' }).click();
+
+  await page.waitForTimeout(5000);
 });
