@@ -14,6 +14,7 @@ test('test3a@reg',async ({page})=>{
 test('test4@reg',async ({page})=>{
     console.log('fourth test');
 })
+//testing the git
 test('test5@sanity@reg',async ({page})=>{
     console.log('fifth test');
 })
